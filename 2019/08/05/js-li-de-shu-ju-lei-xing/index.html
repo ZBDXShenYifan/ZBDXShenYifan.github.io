@@ -388,7 +388,7 @@ null
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        604
+                        622
                     </div>
                     
 
@@ -418,35 +418,45 @@ null
 <li>布尔值(boolean)</li>
 <li>undefined</li>
 <li>null</li>
-<li>对象(object)<br>其中对象又称为合成类型，它经常由其他的基本类型组成<h2 id="2-number类型"><a href="#2-number类型" class="headerlink" title="2. number类型"></a>2. number类型</h2>JavaScript内部 ，所有数字都以64位浮点数形式存储，不存在整数，所以有1 === 1.0 //true,<br>由于浮点数不是精确的值，所以涉及小数的比较和运算需要注意，如:<br>```</li>
+<li>对象(object)<br>其中对象又称为合成类型，它经常由其他的基本类型组成<h2 id="2-number类型"><a href="#2-number类型" class="headerlink" title="2. number类型"></a>2. number类型</h2>JavaScript内部 ，所有数字都以64位浮点数形式存储，不存在整数，所以有1 === 1.0 //true,<br>由于浮点数不是精确的值，所以涉及小数的比较和运算需要注意，如:</li>
 </ul>
-<p>0.1 + 0.2  // 0.30000000000000004</p>
-<pre><code>### 2.2 数值表示法
-(1) 科学计数
-数值可以采用科学记数法表示，如</code></pre><p>123e3 //123000<br>123e-3 //0.123</p>
-<pre><code>(2) 进制
-0o表示八进制，0x表示16进制，0b表示2进制</code></pre><p>0xff // 255<br>0o377 // 255<br>0b11 //3</p>
-<pre><code>## 3. object
-对象中的所有键名都是字符串，当键名是数值时，会被自动转为字符串.如果字符串符合标识符的定义，可以省略&#39;&#39;</code></pre><p>let obj = {<br>    0:’A’,<br>    1:’B’<br>    }<br>obj[0] // ‘A’ </p>
-<pre><code>当键名不符合标识符的条件时，需要加上引号 如</code></pre><p>let obj = {<br>    ‘1a’:’A’,<br>    ‘a b’:’B’<br>    ‘c+’:’C’</p>
-<pre><code>对象可以包含对象，设置可以包含本身</code></pre><p>let obj = {<br>    name:’zbdxsyf’,<br>    age: 18,<br>    }</p>
-<pre><code>对象读取属性有两种方法，一种是使用.运算符，还有一种是使用方括号</code></pre><p>let obj = {<br>    p: ‘Hello World’<br>    };<br>obj.p<br>obj[‘p’]</p>
-<pre><code>数字键名在方括号中加不加引号都可以，因为会自动转化为字符串,数字键名不能使用点运算符，因为有可能被当成小数
-属性的遍历可以使用for...in循环，
-使用for in 循环遍历对象</code></pre><p>let obj = {}<br>for (let p in obj){<br>    console.log(p,obj[p]) //不能使用obj.p, 因为obj.p会转化为obj[‘p’],p是变量不是字符串<br>    }</p>
-<pre><code>得到obj对应的键值对
-可以使用delete 命令来删除对象中的键值对，删除成功后返回true
-使用delete需要注意:
-delete删除一个不存在的属性不会报错，且返回true</code></pre><p>let obj = {}<br>delete obj.p //true</p>
-<pre><code>## 5. undefined null
-null与undefined有以下区别:
-1. 当变量声明未赋值时，变量的值为undefined
-2. 如果对象为空时，我们一般赋值为null 而不是undefined
-## 4. typeof运算符
-使用typeof可以查看一个值的数据类型，但是存在如下问题:
-1. typeof(null) 的值为object
-2. typeof(function)的值为function
-事实上， null 为一种单独的数据类型，而function属于object类型</code></pre>
+<pre><code>0.1 + 0.2  // 0.30000000000000004</code></pre><h3 id="2-2-数值表示法"><a href="#2-2-数值表示法" class="headerlink" title="2.2 数值表示法"></a>2.2 数值表示法</h3><p>(1) 科学计数<br>数值可以采用科学记数法表示，如</p>
+<pre><code>123e3 //123000
+123e-3 //0.123</code></pre><p>(2) 进制<br>0o表示八进制，0x表示16进制，0b表示2进制</p>
+<pre><code>0xff // 255
+0o377 // 255
+0b11 //3</code></pre><h2 id="3-object"><a href="#3-object" class="headerlink" title="3. object"></a>3. object</h2><p>对象中的所有键名都是字符串，当键名是数值时，会被自动转为字符串.如果字符串符合标识符的定义，可以省略’’</p>
+<pre><code>let obj = {
+    0:&#39;A&#39;,
+    1:&#39;B&#39;
+    }
+obj[0] // &#39;A&#39; </code></pre><p>当键名不符合标识符的条件时，需要加上引号 如</p>
+<pre><code>let obj = {
+    &#39;1a&#39;:&#39;A&#39;,
+    &#39;a b&#39;:&#39;B&#39;
+    &#39;c+&#39;:&#39;C&#39;</code></pre><p>对象可以包含对象，设置可以包含本身</p>
+<pre><code>let obj = {
+    name:&#39;zbdxsyf&#39;,
+    age: 18,    
+    }</code></pre><p>对象读取属性有两种方法，一种是使用.运算符，还有一种是使用方括号</p>
+<pre><code>let obj = {
+    p: &#39;Hello World&#39;
+    };
+obj.p
+obj[&#39;p&#39;]</code></pre><p>数字键名在方括号中加不加引号都可以，因为会自动转化为字符串,数字键名不能使用点运算符，因为有可能被当成小数<br>属性的遍历可以使用for…in循环，<br>使用for in 循环遍历对象</p>
+<pre><code>let obj = {}
+for (let p in obj){
+    console.log(p,obj[p]) //不能使用obj.p, 因为obj.p会转化为obj[&#39;p&#39;],p是变量不是字符串
+    }</code></pre><p>得到obj对应的键值对<br>可以使用delete 命令来删除对象中的键值对，删除成功后返回true<br>使用delete需要注意:<br>delete删除一个不存在的属性不会报错，且返回true</p>
+<pre><code>let obj = {}
+delete obj.p //true</code></pre><h2 id="5-undefined-null"><a href="#5-undefined-null" class="headerlink" title="5. undefined null"></a>5. undefined null</h2><p>null与undefined有以下区别:</p>
+<ol>
+<li>当变量声明未赋值时，变量的值为undefined</li>
+<li>如果对象为空时，我们一般赋值为null 而不是undefined<h2 id="4-typeof运算符"><a href="#4-typeof运算符" class="headerlink" title="4. typeof运算符"></a>4. typeof运算符</h2>使用typeof可以查看一个值的数据类型，但是存在如下问题:</li>
+<li>typeof(null) 的值为object</li>
+<li>typeof(function)的值为function<br>事实上， null 为一种单独的数据类型，而function属于object类型</li>
+</ol>
+
             </div>
             <hr/>
 
@@ -849,7 +859,7 @@ null
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">696</span>
+                <span class="white-color">714</span>
             
 
             
