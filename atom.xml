@@ -5,21 +5,45 @@
   <subtitle>zbdxsyf&#39;s blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://zbdxshenyifan.github.io/"/>
-  <updated>2019-08-04T12:18:45.771Z</updated>
-  <id>https://zbdxshenyifan.github.io/</id>
+  <link href="https://zbdxsyf.top/"/>
+  <updated>2019-08-05T08:35:47.265Z</updated>
+  <id>https://zbdxsyf.top/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>zbdxsyf</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS里的数据类型</title>
+    <link href="https://zbdxsyf.top/2019/08/05/js-li-de-shu-ju-lei-xing/"/>
+    <id>https://zbdxsyf.top/2019/08/05/js-li-de-shu-ju-lei-xing/</id>
+    <published>2019-08-05T07:46:22.000Z</published>
+    <updated>2019-08-05T08:35:47.265Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1. 简介&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://zbdxsyf.top/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>更换了主题</title>
-    <link href="https://zbdxshenyifan.github.io/2019/08/04/geng-huan-liao-zhu-ti/"/>
-    <id>https://zbdxshenyifan.github.io/2019/08/04/geng-huan-liao-zhu-ti/</id>
+    <link href="https://zbdxsyf.top/2019/08/04/geng-huan-liao-zhu-ti/"/>
+    <id>https://zbdxsyf.top/2019/08/04/geng-huan-liao-zhu-ti/</id>
     <published>2019-08-04T12:17:57.000Z</published>
     <updated>2019-08-04T12:18:45.771Z</updated>
     
@@ -41,8 +65,8 @@
   
   <entry>
     <title>article title</title>
-    <link href="https://zbdxshenyifan.github.io/2019/08/04/article-title/"/>
-    <id>https://zbdxshenyifan.github.io/2019/08/04/article-title/</id>
+    <link href="https://zbdxsyf.top/2019/08/04/article-title/"/>
+    <id>https://zbdxsyf.top/2019/08/04/article-title/</id>
     <published>2019-08-04T09:46:07.000Z</published>
     <updated>2019-08-04T09:47:12.726Z</updated>
     
@@ -63,8 +87,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://zbdxshenyifan.github.io/2019/08/04/hello-world/"/>
-    <id>https://zbdxshenyifan.github.io/2019/08/04/hello-world/</id>
+    <link href="https://zbdxsyf.top/2019/08/04/hello-world/"/>
+    <id>https://zbdxsyf.top/2019/08/04/hello-world/</id>
     <published>2019-08-04T09:17:04.442Z</published>
     <updated>2019-08-04T09:17:04.443Z</updated>
     

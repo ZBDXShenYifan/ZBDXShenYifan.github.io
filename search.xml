@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>JS里的数据类型</title>
+      <link href="/2019/08/05/js-li-de-shu-ju-lei-xing/"/>
+      <url>/2019/08/05/js-li-de-shu-ju-lei-xing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h2><p>JavaScript共有七种数据类型，分别是:</p><ul><li>数值(number)</li><li>字符串(string)</li><li>布尔值(boolean)</li><li>undefined</li><li>null</li><li>对象(object)<br>其中对象又称为合成类型，它经常由其他的基本类型组成<h2 id="2-number类型"><a href="#2-number类型" class="headerlink" title="2. number类型"></a>2. number类型</h2>JavaScript内部 ，所有数字都以64位浮点数形式存储，不存在整数，所以有1 === 1.0 //true,<br>由于浮点数不是精确的值，所以涉及小数的比较和运算需要注意，如:<br>```</li></ul><p>0.1 + 0.2  // 0.30000000000000004</p><pre><code>### 2.2 数值表示法(1) 科学计数数值可以采用科学记数法表示，如</code></pre><p>123e3 //123000<br>123e-3 //0.123</p><pre><code>(2) 进制0o表示八进制，0x表示16进制，0b表示2进制</code></pre><p>0xff // 255<br>0o377 // 255<br>0b11 //3</p><pre><code>## 3. object对象中的所有键名都是字符串，当键名是数值时，会被自动转为字符串.如果字符串符合标识符的定义，可以省略&#39;&#39;</code></pre><p>let obj = {<br>    0:’A’,<br>    1:’B’<br>    }<br>obj[0] // ‘A’ </p><pre><code>当键名不符合标识符的条件时，需要加上引号 如</code></pre><p>let obj = {<br>    ‘1a’:’A’,<br>    ‘a b’:’B’<br>    ‘c+’:’C’</p><pre><code>对象可以包含对象，设置可以包含本身</code></pre><p>let obj = {<br>    name:’zbdxsyf’,<br>    age: 18,<br>    }</p><pre><code>对象读取属性有两种方法，一种是使用.运算符，还有一种是使用方括号</code></pre><p>let obj = {<br>    p: ‘Hello World’<br>    };<br>obj.p<br>obj[‘p’]</p><pre><code>数字键名在方括号中加不加引号都可以，因为会自动转化为字符串,数字键名不能使用点运算符，因为有可能被当成小数属性的遍历可以使用for...in循环，使用for in 循环遍历对象</code></pre><p>let obj = {}<br>for (let p in obj){<br>    console.log(p,obj[p]) //不能使用obj.p, 因为obj.p会转化为obj[‘p’],p是变量不是字符串<br>    }</p><pre><code>得到obj对应的键值对可以使用delete 命令来删除对象中的键值对，删除成功后返回true使用delete需要注意:delete删除一个不存在的属性不会报错，且返回true</code></pre><p>let obj = {}<br>delete obj.p //true</p><pre><code>## 5. undefined nullnull与undefined有以下区别:1. 当变量声明未赋值时，变量的值为undefined2. 如果对象为空时，我们一般赋值为null 而不是undefined## 4. typeof运算符使用typeof可以查看一个值的数据类型，但是存在如下问题:1. typeof(null) 的值为object2. typeof(function)的值为function事实上， null 为一种单独的数据类型，而function属于object类型</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>更换了主题</title>
       <link href="/2019/08/04/geng-huan-liao-zhu-ti/"/>
       <url>/2019/08/04/geng-huan-liao-zhu-ti/</url>
