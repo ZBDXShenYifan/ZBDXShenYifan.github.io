@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zbdxsyf.top/"/>
-  <updated>2019-08-05T08:53:21.499Z</updated>
+  <updated>2019-08-08T13:10:43.879Z</updated>
   <id>https://zbdxsyf.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS里的数据类型转换</title>
+    <link href="https://zbdxsyf.top/2019/08/08/js-li-de-shu-ju-lei-xing-zhuan-huan/"/>
+    <id>https://zbdxsyf.top/2019/08/08/js-li-de-shu-ju-lei-xing-zhuan-huan/</id>
+    <published>2019-08-08T11:46:06.000Z</published>
+    <updated>2019-08-08T13:10:43.879Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-任意类型转字符串&quot;&gt;&lt;a href=&quot;#1-任意类型转字符串&quot; class=&quot;headerlink&quot; title=&quot;1 任意类型转字符串&quot;&gt;&lt;/a&gt;1 任意类型转字符串&lt;/h2&gt;&lt;h3 id=&quot;1-1-使用String-方法&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://zbdxsyf.top/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS里的数据类型</title>
