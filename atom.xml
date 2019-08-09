@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zbdxsyf.top/"/>
-  <updated>2019-08-08T13:10:43.879Z</updated>
+  <updated>2019-08-09T02:55:07.454Z</updated>
   <id>https://zbdxsyf.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>普通类型和对象的区别</title>
+    <link href="https://zbdxsyf.top/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/"/>
+    <id>https://zbdxsyf.top/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/</id>
+    <published>2019-08-08T13:19:44.000Z</published>
+    <updated>2019-08-09T02:55:07.454Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(堆) 普通类型的的数据直接存在在Stack中，而对象存放在堆中，这是普通类型和对象的重要区别&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;对象在内存中的存放&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://zbdxsyf.top/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>JS里的数据类型转换</title>
