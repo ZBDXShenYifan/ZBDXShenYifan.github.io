@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zbdxsyf.top/"/>
-  <updated>2019-08-09T02:55:07.454Z</updated>
+  <updated>2019-08-11T08:57:06.538Z</updated>
   <id>https://zbdxsyf.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>原型与原型链</title>
+    <link href="https://zbdxsyf.top/2019/08/11/yuan-xing-yu-yuan-xing-lian/"/>
+    <id>https://zbdxsyf.top/2019/08/11/yuan-xing-yu-yuan-xing-lian/</id>
+    <published>2019-08-11T08:06:37.000Z</published>
+    <updated>2019-08-11T08:57:06.538Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在JavaScript中， 每个实例对象都有一个私有属性，_&lt;em&gt;proto_&lt;/em&gt;, 指向它的构造函数的原型对象。&lt;br&gt;例如&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var num = new Number(&amp;quot;1&amp;quot;)
+//
+        
+      
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="https://zbdxsyf.top/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>普通类型和对象的区别</title>

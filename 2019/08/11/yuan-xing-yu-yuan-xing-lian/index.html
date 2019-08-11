@@ -4,11 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="普通类型和对象的区别, zbdxsyf">
-    <meta name="description" content="
-JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(堆) 普通类型的的数据直接存在在Stack中，而对象存放在堆中，这是普通类型和对象的重要区别
-
-对象在内存中的存放例1:var a = {name: &amp;#39;a&amp;#">
+    <meta name="keywords" content="原型与原型链, zbdxsyf">
+    <meta name="description" content="在JavaScript中， 每个实例对象都有一个私有属性，_proto_, 指向它的构造函数的原型对象。例如
+var num = new Number(&amp;quot;1&amp;quot;)
+// 此时num存在一个私有属性__proto__指向Nu">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@ JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>普通类型和对象的区别 | zbdxsyf</title>
+    <title>原型与原型链 | zbdxsyf</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -245,13 +244,13 @@ JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        普通类型和对象的区别
+                        原型与原型链
                     </div>
                 </div>
             </div>
@@ -377,21 +376,21 @@ JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-08
+                    2019-08-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        543
+                        376
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -407,50 +406,21 @@ JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(堆) 普通类型的的数据直接存在在Stack中，而对象存放在堆中，这是普通类型和对象的重要区别</p>
-</blockquote>
-<h2 id="对象在内存中的存放"><a href="#对象在内存中的存放" class="headerlink" title="对象在内存中的存放"></a>对象在内存中的存放</h2><h3 id="例1"><a href="#例1" class="headerlink" title="例1:"></a>例1:</h3><pre><code>var a = {name: &#39;a&#39;}
-var b = a
-b = {name: &#39;b&#39;}
-a.name 是多少？</code></pre><p><img src="/image/2019-08-09-09-52-03.jpg" alt></p>
-<p>var a = {name: ‘a’}<br>var b = a<br>此时a和b指向同一块内存</p>
-<p><img src="/image/2019-08-09-09-55-49.jpg" alt><br> b = {name: ‘b’}<br>此时b指向的内存地址发生了变化<br>答案:b的name 为b</p>
-<h3 id="例2"><a href="#例2" class="headerlink" title="例2"></a>例2</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'a'</span><span class="token punctuation">}</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> a
-b<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'b'</span></code></pre>
-<p><img src="/image/2019-08-09-10-01-27.jpg" alt><br>b指向的地址未发生改变，b.name 改成 ‘b’， 因为a与b指向同一块内存地址，所以a.name也为’b’</p>
-<h3 id="例3"><a href="#例3" class="headerlink" title="例3"></a>例3</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'a'</span><span class="token punctuation">}</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> a
-b <span class="token operator">=</span> <span class="token keyword">null</span></code></pre>
-<p>a的值为？</p>
-<p><img src="/image/2019-08-09-10-04-40.jpg" alt><br>b 的值为null, a的值为{name:’a’}</p>
-<h3 id="例4"><a href="#例4" class="headerlink" title="例4"></a>例4</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>n<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">}</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> a
-a<span class="token punctuation">.</span>x <span class="token operator">=</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>n<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">}</span>
+                <p>在JavaScript中， 每个实例对象都有一个私有属性，_<em>proto_</em>, 指向它的构造函数的原型对象。<br>例如</p>
+<pre><code>var num = new Number(&quot;1&quot;)
+// 此时num存在一个私有属性__proto__指向Number的prototype</code></pre><p>在上例中的原型对象Number中也有自己的原型对象(__prorp__),指向Object的原型对象prototype<br>诸如此类的还有构造方法String(), Boolean(). 它们层层向上，直到一个对象的原型对象为null，null没有原型，作为原型链中的最后一个环节<br>JavaScript对象有一个指向一个原型对象的链。 当试图访问一个对象的属性时，它不仅仅在该对象上搜索，还会搜寻该对象的原型，以及对象的原型的原型，依次层层向上搜索，直到找到一个属性的名字匹配的属性或到达原型链的末尾</p>
+<p><img src="/image/2019-08-11-16-24-13.jpg" alt><br>图中打印Number对象的结果，它包含一个__proto__私有属性，指向Number的prototype, 在下方还有一个__proto__属性，它指向Object的prototype，所以存在:</p>
+<pre><code>var num = new Number(&quot;1&quot;)
+num.__proto__ === Number.prototype; \\ true
+num.__proto__.__proto__ === Object.prototype; \\ true
+Number.prototype.__proto__ === Object.prototype \\ true
 
-<span class="token function">alert</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>x<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// --> undefined</span>
-<span class="token function">alert</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>x<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// --> [object Object]</span></code></pre>
-<p>刚开始 a,b存放同一块内存地址，之后a.x 存放 a的新地址，但在对a.x赋值时，a.x仍在旧的内存块中, <strong>不能单纯的从右往左看</strong></p>
-<p><img src="/image/2019-08-09-10-29-48.jpg" alt><br>此时，a指向新的内存地址块，但是并没有x属性，所以为undefined, b 仍指向之前的地址块， b.x 指向 a的新地址</p>
-<h2 id="GC垃圾回收"><a href="#GC垃圾回收" class="headerlink" title="GC垃圾回收"></a>GC垃圾回收</h2><blockquote>
-<p>如果一个对象没有被引用，它就是’垃圾’，将被回收</p>
-</blockquote>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'a'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'b'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-b <span class="token operator">=</span> a<span class="token punctuation">;</span></code></pre>
-<p>此时，{name:’b’} 没有任何被任何变量引用，它将被回收。<br>当一个标签页被关闭时，页面中的所有对象分配的内存都会被回收，当然也有例外，<strong>在ES6中，只有关闭整个浏览器，垃圾内存才会回收</strong></p>
-<h2 id="深拷贝与浅拷贝"><a href="#深拷贝与浅拷贝" class="headerlink" title="深拷贝与浅拷贝"></a>深拷贝与浅拷贝</h2><p>例:</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-b <span class="token operator">=</span> a<span class="token punctuation">;</span>
-a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre>
-<p>此时b的值仍为2，没有受a值变化的影响，我们称为深拷贝，普通类型赋值就是深拷贝。<br>对象需要区分深拷贝与浅拷贝</p>
-<pre><code>var a = {name:&#39;a&#39;};
-var b = {name:&#39;b&#39;};
-b = a;
-a.name = &#39;c&#39;;
-b.name === &#39;c&#39; \\ true</code></pre><p>此时b.name的值为’c’ , 因为对象的赋值操作是浅拷贝</p>
+var obj = new Object();
+obj.__proto__ === Object.prototype \\ true</code></pre><p>注意:</p>
+<ol>
+<li>Object._<em>proto_</em> === Function.prototype  Function 是Object的构造函数</li>
+<li>Object.prototype._<em>proto_</em> 指向null<br>总结:<br>原型链的存在使得不同的实例对象可以继承来自原型的相同的公用方法与属性。避免了重复声明与编写方法，降低了内存的占用</li>
+</ol>
 
             </div>
             <hr/>
@@ -609,9 +579,9 @@ b.name === &#39;c&#39; \\ true</code></pre><p>此时b.name的值为’c’ , 因
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《普通类型和对象的区别》
+                    《原型与原型链》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/11/yuan-xing-yu-yuan-xing-lian/" property="cc:attributionName"
                rel="cc:attributionURL">
                 zbdxsyf
             </a> 采用
@@ -651,9 +621,10 @@ b.name === &#39;c&#39; \\ true</code></pre><p>此时b.name的值为’c’ , 因
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/08/11/yuan-xing-yu-yuan-xing-lian/">
                     <div class="card-image">
@@ -673,9 +644,9 @@ var num = new Number(&quot;1&quot;)
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -684,6 +655,7 @@ var num = new Number(&quot;1&quot;)
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -702,22 +674,22 @@ var num = new Number(&quot;1&quot;)
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/08/js-li-de-shu-ju-lei-xing-zhuan-huan/">
+                <a href="/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="JS里的数据类型转换">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="普通类型和对象的区别">
                         
-                        <span class="card-title">JS里的数据类型转换</span>
+                        <span class="card-title">普通类型和对象的区别</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1 任意类型转字符串1.1 使用String() 方法String(1) //&quot;1&quot;
-String(true) //&quot;true&quot;
-String(null) //&quot;null&quot;
-Str
+                            
+JS引擎将内存分为代码区和数据区，数据区分为Stack(栈)和Heap(堆) 普通类型的的数据直接存在在Stack中，而对象存放在堆中，这是普通类型和对象的重要区别
+
+对象在内存中的存放例1:var a = {name: &#39;a&#
                         
                     </div>
                     <div class="publish-info">

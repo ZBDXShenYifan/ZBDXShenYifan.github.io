@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>原型与原型链</title>
+      <link href="/2019/08/11/yuan-xing-yu-yuan-xing-lian/"/>
+      <url>/2019/08/11/yuan-xing-yu-yuan-xing-lian/</url>
+      
+        <content type="html"><![CDATA[<p>在JavaScript中， 每个实例对象都有一个私有属性，_<em>proto_</em>, 指向它的构造函数的原型对象。<br>例如</p><pre><code>var num = new Number(&quot;1&quot;)// 此时num存在一个私有属性__proto__指向Number的prototype</code></pre><p>在上例中的原型对象Number中也有自己的原型对象(__prorp__),指向Object的原型对象prototype<br>诸如此类的还有构造方法String(), Boolean(). 它们层层向上，直到一个对象的原型对象为null，null没有原型，作为原型链中的最后一个环节<br>JavaScript对象有一个指向一个原型对象的链。 当试图访问一个对象的属性时，它不仅仅在该对象上搜索，还会搜寻该对象的原型，以及对象的原型的原型，依次层层向上搜索，直到找到一个属性的名字匹配的属性或到达原型链的末尾</p><p><img src="/image/2019-08-11-16-24-13.jpg" alt><br>图中打印Number对象的结果，它包含一个__proto__私有属性，指向Number的prototype, 在下方还有一个__proto__属性，它指向Object的prototype，所以存在:</p><pre><code>var num = new Number(&quot;1&quot;)num.__proto__ === Number.prototype; \\ truenum.__proto__.__proto__ === Object.prototype; \\ trueNumber.prototype.__proto__ === Object.prototype \\ truevar obj = new Object();obj.__proto__ === Object.prototype \\ true</code></pre><p>注意:</p><ol><li>Object._<em>proto_</em> === Function.prototype  Function 是Object的构造函数</li><li>Object.prototype._<em>proto_</em> 指向null<br>总结:<br>原型链的存在使得不同的实例对象可以继承来自原型的相同的公用方法与属性。避免了重复声明与编写方法，降低了内存的占用</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>普通类型和对象的区别</title>
       <link href="/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/"/>
       <url>/2019/08/08/pu-tong-lei-xing-he-dui-xiang-de-qu-bie/</url>
