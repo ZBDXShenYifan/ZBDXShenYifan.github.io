@@ -383,14 +383,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.1k
+                        1.6k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        5 分
                     </div>
                     
                 
@@ -428,8 +428,15 @@
 <li>连续ARQ协议(自动重传请求)<br>滑动窗口 累计确认 </li>
 </ol>
 <p>TCP可靠传输基于连续ARQ协议<br>TCP滑动窗口以字节位单位<br>选择重传: 指定重传的字节的边界</p>
-<p>TCP协议的流量控制<br>让发送方发送的速率不要太快<br>流量控制是使用滑动窗口来实现 的</p>
-<p>12、对Python的了解程度 是否写过爬虫</p>
+<p>TCP协议的流量控制<br>让发送方发送的速率不要太快<br>流量控制是使用滑动窗口来实现的, 窗口指明允许对方发送的数据量<br>窗口请求数据丢失，可能会导致发送方和接受方互相等待，进入死锁的情况<br>当接受到窗口为0的消息，则启动坚持定时器，坚持定时器每隔一段时间发送一个窗口探测报文<br>考虑点对点的通信量的控制</p>
+<p>TCP协议的拥塞控制<br>网络对硬件设备的性能要求大于硬件资源<br>拥塞控制整个网络，是全局性的考虑<br>慢启动算法:<br>由小到大逐渐增加发送数据量<br>每搜到一一个报文确认，就加一<br>1 2 4 8 16 指数增长<br>增长到慢启动阈值停止增长<br>拥塞避免算法<br>维护一个拥塞窗口的变量<br>只要网络不拥塞，就试探着拥塞窗口调大<br>1 2 4 8 16<br>17 18 19</p>
+<p><img src="/image/2019-08-25-15-14-17.jpg" alt></p>
+<p>TCP 三次握手<br>SYN=1,seq=x      连接请求，序列号<br>SYN=1,ACK=1,seq=y, ack=x+1 期望收到x+1开始的报文<br>ACK=1,seq=x+1,ack=y+1<br>建立连接、同步序号</p>
+<p><img src="/image/2019-08-25-15-25-23.jpg" alt><br>为什么发送方要发出第三个确认报文呢？<br>避免已失效连接请求报文传送到对方，引起错误</p>
+<p><img src="/image/2019-08-25-15-31-41.jpg" alt><br>TCP四次挥手</p>
+<p><img src="/image/2019-08-25-15-38-10.jpg" alt><br>MSL:最长报文段寿命<br>MSL建议设置为2分钟<br>表现:释放连接后，端口等一段时间才能使用<br>为什么需要等待2MSL<br>确保发送方的ACK可以到达接收方<br>2MSL时间内没有收到，则接收方会重发<br>确保当前连接的所报文都已经过期</p>
+<h2 id="套接字与套接字编程"><a href="#套接字与套接字编程" class="headerlink" title="套接字与套接字编程"></a>套接字与套接字编程</h2><p>{IP:Port}， 表示TCP连接的一端<br>TCP={Scocket1: Socket2}<br>       ={(IP:Port)} {(IP:Port)}<br>客户端和服务端通过TCP连接起来<br>服务端:创建套接字-&gt;绑定套接字-&gt; 监听套接字 -&gt;接受和处理信息<br>客户端: 创建套接字 -&gt; 连接套接字 -&gt; 发送消息</p>
+<h2 id="域套接字和网络套接字的区别"><a href="#域套接字和网络套接字的区别" class="headerlink" title="域套接字和网络套接字的区别"></a>域套接字和网络套接字的区别</h2><p>12、对Python的了解程度 是否写过爬虫</p>
 <p>13知道哪些Linux命令</p>
 
             </div>
@@ -836,7 +843,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">5.3k</span>
+                <span class="white-color">6.7k</span>
             
 
             

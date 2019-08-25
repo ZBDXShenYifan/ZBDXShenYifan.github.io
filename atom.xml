@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zbdxsyf.top/"/>
-  <updated>2019-08-25T02:14:22.528Z</updated>
+  <updated>2019-08-25T09:59:25.071Z</updated>
   <id>https://zbdxsyf.top/</id>
   
   <author>
@@ -15,6 +15,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络应用层</title>
+    <link href="https://zbdxsyf.top/2019/08/25/ji-suan-ji-wang-luo-ying-yong-ceng/"/>
+    <id>https://zbdxsyf.top/2019/08/25/ji-suan-ji-wang-luo-ying-yong-ceng/</id>
+    <published>2019-08-25T08:21:08.000Z</published>
+    <updated>2019-08-25T09:59:25.071Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;应用层概述&quot;&gt;&lt;a href=&quot;#应用层概述&quot; class=&quot;headerlink&quot; title=&quot;应用层概述&quot;&gt;&lt;/a&gt;应用层概述&lt;/h2&gt;&lt;p&gt;应用层是面向用户的一层&lt;br&gt;UDP: 多媒体信息分发 视频、语音、实时信息&lt;br&gt;TCP: 可靠信息传输
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="https://zbdxsyf.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试设计</title>
+    <link href="https://zbdxsyf.top/2019/08/25/ruan-jian-ce-shi-she-ji/"/>
+    <id>https://zbdxsyf.top/2019/08/25/ruan-jian-ce-shi-she-ji/</id>
+    <published>2019-08-25T03:21:02.000Z</published>
+    <updated>2019-08-25T03:32:21.172Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;测试用例设计&quot;&gt;&lt;a href=&quot;#测试用例设计&quot; class=&quot;headerlink&quot; title=&quot;测试用例设计&quot;&gt;&lt;/a&gt;测试用例设计&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;设计测试用例，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件测试" scheme="https://zbdxsyf.top/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试技术深化</title>
+    <link href="https://zbdxsyf.top/2019/08/25/ce-shi-ji-zhu-shen-hua/"/>
+    <id>https://zbdxsyf.top/2019/08/25/ce-shi-ji-zhu-shen-hua/</id>
+    <published>2019-08-25T02:43:32.000Z</published>
+    <updated>2019-08-25T03:19:31.172Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;白盒测试&quot;&gt;&lt;a href=&quot;#白盒测试&quot; class=&quot;headerlink&quot; title=&quot;白盒测试&quot;&gt;&lt;/a&gt;白盒测试&lt;/h2&gt;&lt;h3 id=&quot;代码审查&quot;&gt;&lt;a href=&quot;#代码审查&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件测试" scheme="https://zbdxsyf.top/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>软件测试流程</title>
@@ -45,7 +118,7 @@
     <link href="https://zbdxsyf.top/2019/08/23/bai-du-ce-shi-kai-fa-yi-mian/"/>
     <id>https://zbdxsyf.top/2019/08/23/bai-du-ce-shi-kai-fa-yi-mian/</id>
     <published>2019-08-23T12:18:13.000Z</published>
-    <updated>2019-08-24T09:40:25.509Z</updated>
+    <updated>2019-08-25T13:37:53.317Z</updated>
     
     <summary type="html">
     
