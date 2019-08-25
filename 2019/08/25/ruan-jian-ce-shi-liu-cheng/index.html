@@ -4,8 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, zbdxsyf">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="软件测试流程, zbdxsyf">
+    <meta name="description" content="搭建测试环境搭建测试环境前
+确认测试目的功能测试: 不需要大量数据，需要覆盖率高，测试数据要求尽量真实性能测试: 大量存量数据或者与硬件环境尽可能相似的硬件配置
+测试的软件环境尽可能模拟真实环境
+了解符合测试软件运行的最低要求及用户使用的硬">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | zbdxsyf</title>
+    <title>软件测试流程 | zbdxsyf</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -242,13 +245,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        软件测试流程
                     </div>
                 </div>
             </div>
@@ -357,9 +360,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/软件测试/" target="_blank">
+                                <span class="chip bg-color">软件测试</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -370,21 +377,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-04
+                    2019-08-25
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        73
+                        594
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -400,15 +407,58 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="搭建测试环境"><a href="#搭建测试环境" class="headerlink" title="搭建测试环境"></a>搭建测试环境</h2><h3 id="搭建测试环境前"><a href="#搭建测试环境前" class="headerlink" title="搭建测试环境前"></a>搭建测试环境前</h3><ol>
+<li>确认测试目的<br>功能测试: 不需要大量数据，需要覆盖率高，测试数据要求尽量真实<br>性能测试: 大量存量数据或者与硬件环境尽可能相似的硬件配置</li>
+<li>测试的软件环境尽可能模拟真实环境</li>
+<li>了解符合测试软件运行的最低要求及用户使用的硬件配置</li>
+<li>产品化的测试需要考虑兼容性方案</li>
+<li>营造独立的测试环境</li>
+<li>构建可复用的测试环境: 构建可复用的测试环境</li>
+</ol>
+<h3 id="搭建环境过程分析"><a href="#搭建环境过程分析" class="headerlink" title="搭建环境过程分析"></a>搭建环境过程分析</h3><ol>
+<li>线下搭建</li>
+<li>独立测试服务器或虚拟机</li>
+<li>测试环境配置</li>
+<li>测试项目导入</li>
+</ol>
+<p>例如:<br>线下<br>配置Java环境(下载jdk并配置环境变量)<br>下载并安装中间件(tomcat jetty或其他)<br>安装数据库并导入初始化脚本<br>线上<br>Docker模式</p>
+<ol>
+<li>构建属于自己的image</li>
+<li>一键deploy<br>依赖第三方平台</li>
+</ol>
+<h2 id="软件测试过程"><a href="#软件测试过程" class="headerlink" title="软件测试过程"></a>软件测试过程</h2><p><img src="/image/2019-08-25-09-15-03.jpg" alt></p>
+<h3 id="测试过程划分"><a href="#测试过程划分" class="headerlink" title="测试过程划分"></a>测试过程划分</h3><ol>
+<li>在逻辑上，测试活动按顺序进行</li>
+<li>在实际测试过程中，这些活动是可以重叠或同时进行的</li>
+</ol>
+<h3 id="测试策划过程"><a href="#测试策划过程" class="headerlink" title="测试策划过程"></a>测试策划过程</h3><ol>
+<li>确认测试的资源和技术需求</li>
+<li>进行风险分析和评估</li>
+<li>根据上述分析结果制定测试计划</li>
+<li>根据测试计划开展相应的测试控制活动</li>
+</ol>
+<h2 id="需求测试"><a href="#需求测试" class="headerlink" title="需求测试"></a>需求测试</h2><p>原因: </p>
+<ol>
+<li>减少与开发人员交互，节省时间</li>
+<li>早期确定测试用例的编写过程，为测试打好了基础</li>
+<li>为测试用例设计提供帮助</li>
+<li>可以发现需求不合理的地方，降低测试成本</li>
+<li>明确哪些需求更重要</li>
+<li>与风险承担着今早对项目达成共识</li>
+<li>对需求更清晰</li>
+</ol>
+<h3 id="需求验证"><a href="#需求验证" class="headerlink" title="需求验证"></a>需求验证</h3><p>审查需求分档<br>以需求为依据编写测试用例<br>确定合格的标准</p>
+<h3 id="需求规格说明书检查列表"><a href="#需求规格说明书检查列表" class="headerlink" title="需求规格说明书检查列表"></a>需求规格说明书检查列表</h3><p><img src="/image/2019-08-25-09-30-07.jpg" alt></p>
+<h2 id="测试策略"><a href="#测试策略" class="headerlink" title="测试策略"></a>测试策略</h2><p>描述测试项目和测试任务之间的关系</p>
+<h3 id="测试策略要素"><a href="#测试策略要素" class="headerlink" title="测试策略要素"></a>测试策略要素</h3><ol>
+<li>测试安排、发布计划</li>
+<li>测试范围(按优先级排列)</li>
+<li>测试资源: 人力和工具</li>
+<li>测试环境: 推荐环境解决方案、操作系统要求、软硬件要求</li>
+<li>测试方法</li>
+<li>文档管理</li>
+<li>风险管理</li>
+</ol>
 
             </div>
             <hr/>
@@ -567,9 +617,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Hello World》
+                    《软件测试流程》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/04/hello-world/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/25/ruan-jian-ce-shi-liu-cheng/" property="cc:attributionName"
                rel="cc:attributionURL">
                 zbdxsyf
             </a> 采用
@@ -609,66 +659,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/08/04/article-title/">
+                <a href="/2019/08/25/ruan-jian-ce-shi-liu-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="article title">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="软件测试流程">
                         
-                        <span class="card-title">article title</span>
+                        <span class="card-title">软件测试流程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Hello World!
-
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-04
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            zbdxsyf
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/04/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            搭建测试环境搭建测试环境前
+确认测试目的功能测试: 不需要大量数据，需要覆盖率高，测试数据要求尽量真实性能测试: 大量存量数据或者与硬件环境尽可能相似的硬件配置
+测试的软件环境尽可能模拟真实环境
+了解符合测试软件运行的最低要求及用户使用的硬
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-25
                             </span>
                         <span class="publish-author">
                             
@@ -679,6 +695,61 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/软件测试/" target="_blank">
+                        <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/23/bai-du-ce-shi-kai-fa-yi-mian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="百度测试开发一面">
+                        
+                        <span class="card-title">百度测试开发一面</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+自我介绍
+说说小程序(个人小程序项目)与其他项目开发的区别小程序和网页开发都依赖JavaScript，但是所用的JavaScipt不同，正因为小程序没有DOM和BOM对象所以前端开发的一些库，例如JQuery、Zepto等在小程序中无法运
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-user fa-fw"></i>
+                            zbdxsyf
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/面经/" target="_blank">
+                        <span class="chip bg-color">面经</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
