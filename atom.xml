@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zbdxsyf.top/"/>
-  <updated>2019-08-27T02:34:09.844Z</updated>
+  <updated>2020-07-08T09:08:25.993Z</updated>
   <id>https://zbdxsyf.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客回归</title>
+    <link href="https://zbdxsyf.top/2020/07/01/bo-ke-hui-gui/"/>
+    <id>https://zbdxsyf.top/2020/07/01/bo-ke-hui-gui/</id>
+    <published>2020-06-30T20:57:43.000Z</published>
+    <updated>2020-07-08T09:08:25.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;2020.07.08博客回归，写一些学到的数学、英语、和数据结构的知识（包含C）&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>软件测试执行管理</title>
